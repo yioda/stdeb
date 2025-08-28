@@ -51,6 +51,24 @@ interpreter (and only the Python3 package installs scripts)::
 
 News
 ----
+ * FUTURE: **Version 0.11.0**. See the `download page
+   <https://pypi.python.org/pypi/stdeb/0.11.0>`__.
+
+  * Breaking changes:
+
+    * Remove support for running stdeb using Python 2.
+      stdeb scripts are now only expected to run using Python 3. It may be
+      possible to create Python 2 packages using stdeb from Python 3 but this
+      is not well tested. The new minimum Python version is 3.7 and this will
+      be raised periodically in the future. The goal is to support the latest
+      Python 3 releases in Debian Unstable and Testing back to the current
+      oldoldstable.
+    * Minimum debhelper version has been raised to 12.
+      Packages are now built using pybuild instead of of python_distutils.
+      The minimum debhelper version will be raised periodically in order
+      to support changes to packaging infrastructure but we will try not
+      to raise it above the current oldoldstable version.
+
  * 2025-07-31: **Version 0.10.2**. See the `download page
    <https://pypi.python.org/pypi/stdeb/0.10.2>`__.
    This is a bugfix release for 0.10.1 which fixes a regression.
