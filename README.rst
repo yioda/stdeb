@@ -52,7 +52,7 @@ interpreter (and only the Python3 package installs scripts)::
 News
 ----
 
- * FUTURE: **Version 0.11.0**. See the `download page
+ * 2025-09-12: **Version 0.11.0**. See the `download page
    <https://pypi.python.org/pypi/stdeb/0.11.0>`__.
 
   * Breaking changes:
