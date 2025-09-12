@@ -51,6 +51,7 @@ interpreter (and only the Python3 package installs scripts)::
 
 News
 ----
+
  * FUTURE: **Version 0.11.0**. See the `download page
    <https://pypi.python.org/pypi/stdeb/0.11.0>`__.
 
@@ -68,6 +69,13 @@ News
       The minimum debhelper version will be raised periodically in order
       to support changes to packaging infrastructure but we will try not
       to raise it above the current oldoldstable version.
+
+ * New features:
+
+    * Add ``Dh-python3-params``` config setting to stdeb.cfg.
+      The value of this setting will be passed to dh_python3 in the
+      debian/rules file and can be used for specifying options that are not
+      otherwise configurable.
 
  * 2025-07-31: **Version 0.10.2**. See the `download page
    <https://pypi.python.org/pypi/stdeb/0.10.2>`__.
@@ -835,6 +843,7 @@ All available options:
   Udev-Rules                           file with rules to install to udev
   Python2-Depends-Name                 override Python 2 Debian package name in
                                        ${python:Depends}
+  Dh-python3-params                    parameters passed to dh_python3
 ====================================== =========================================
 
 The option names in stdeb.cfg files are not case sensitive.
